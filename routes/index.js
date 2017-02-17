@@ -9,7 +9,7 @@ router.get('/', function (req, res, next) {
   });
 });
 
-router.get('/wechat', function (req, res) {
+router.get('/wechat-lite-app-research', function (req, res) {
   res.sendFile(path.resolve(__dirname, '../html/wechat-small-program.html'));
 });
 
