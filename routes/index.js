@@ -9,8 +9,8 @@ router.get('/', function (req, res, next) {
   });
 });
 
-app.get('/webchat', function (req, res) {
-  res.sendFile(path.join(__dirname + 'html/wechat-small-program.html'));
+router.get('/webchat', function (req, res) {
+  res.sendFile(path.resolve(__dirname, '../html/wechat-small-program.html'));
 });
 
 module.exports = router;
