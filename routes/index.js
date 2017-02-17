@@ -9,7 +9,7 @@ router.get('/', function (req, res, next) {
   });
 });
 
-router.get('/webchat', function (req, res) {
+router.get('/wechat', function (req, res) {
   res.sendFile(path.resolve(__dirname, '../html/wechat-small-program.html'));
 });
 
